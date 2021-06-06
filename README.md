@@ -11,13 +11,7 @@ Idk why anyone will want to use but you can.
 
 ## Installation
 
-OS X & Linux:
-
-None
-
-Windows:
-
-Download from release
+coming soon
 
 ## To run from source
 
@@ -43,7 +37,8 @@ pyinstaller --noconfirm --onefile --console --icon "resources/tiktok.ico" --name
 
 ## FaQ
 
-* 
+* Can i get ratelimited?
+    * Maybe you can get ratelimited if you create to much requests to the TikTok page. So dont forget to set your checking limit!
 * Is this code a virus, keylogger or something similar?
     * No, check the code and see it is not a virus and compile yourself
 
@@ -52,8 +47,8 @@ pyinstaller --noconfirm --onefile --console --icon "resources/tiktok.ico" --name
 ## Release History
 
 * 0.0.1b
-    * Work in progress
-
+    * Issues
+        * Compile Issue view more [here](https://github.com/d3vpy/TTUC/issues/1)
 
 ## Meta
 
