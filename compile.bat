@@ -1,0 +1,1 @@
+pyinstaller --noconfirm --onefile --console --icon "resources/tiktok.ico" --name "TTUC"  "D:/Coding/TikTok username checker/main.py"
