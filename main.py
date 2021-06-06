@@ -2,9 +2,21 @@ from TikTokApi import TikTokApi
 import platform
 import os
 import random  
+import inspect
+import sys
 import time
+from pathlib import Path
 
 api = TikTokApi()
+TikTokApi.get_instance(use_selenium=True)
+
+def get_file_dirname() -> Path:
+    """Returns the callee (`__file__`) directory name"""
+    module_name = inspect.currentframe().f_back.f_globals["__name__"]
+    module = sys.modules[module_name]
+    assert module
+    return Path(module.__file__).parent.absolute()
+
 
 
 class App:
@@ -16,21 +28,21 @@ class App:
             os.system('clear')
 
         print('┌─────────────┬───────────────────────────┐\n'
-              '│╔╦╗╔╦╗╦ ╦╔═╗ │ TikTok: philliphqs        │\n'
-              '│ ║  ║ ║ ║║   │ Discord: philliphqs#5920  │\n'
-              '│ ╩  ╩ ╚═╝╚═╝ │ Instagram: phillip.hqs    │\n'
+              '│╔╦╗╔╦╗╦ ╦╔═╗ │ TikTok: d3vpy             │\n'
+              '│ ║  ║ ║ ║║   │ Discord: d3vpy#3399       │\n'
+              '│ ╩  ╩ ╚═╝╚═╝ │ GitHub: d3vpy             │\n'
               '├─────────────┴─────────┬─────────────────┤\n'
               '│TikTok Username checker│ Version 0.0.1b  │\n'
               '├───────────────────────┴─────────────────┤')
         
         if platform.system() == 'Windows':
-            print('│ Platform: Windows                                                               │') 
+            print('│ Platform: Windows                       │') 
         elif platform.system() == 'Linux':
-            print('│ Platform: Linux                                                                 │') 
+            print('│ Platform: Linux                         │') 
         elif platform.system() == 'Darwin':
-            print('│ Platform: Darwin                                                                │') 
+            print('│ Platform: Darwin                        │') 
         else:
-            print('│ Platform: Other                                                                 │') 
+            print('│ Platform: Other                         │') 
 
         print('└─────────────────────────────────────────┘')
         

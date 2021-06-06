@@ -1,1 +1,1 @@
-pyinstaller --noconfirm --onefile --console --icon "resources/tiktok.ico" --name "TTUC"  "D:/Coding/TikTok username checker/main.py"
+pyinstaller --noconfirm --onefile --console --icon "D:/Coding/TikTok username checker/resources/tiktok.ico" --name "TTUC" --ascii  "D:/Coding/TikTok username checker/main.py"
