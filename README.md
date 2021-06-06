@@ -11,7 +11,7 @@ Idk why anyone will want to use but you can.
 
 ## Installation
 
-coming soon
+Due [compile issue](https://github.com/d3vpy/TTUC/issues/1) there is no installation if you anyways want to use follow the steps in the release page.
 
 ## To run from source
 
