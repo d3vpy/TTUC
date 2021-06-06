@@ -49,6 +49,8 @@ pyinstaller --noconfirm --onefile --console --icon "resources/tiktok.ico" --name
 * 0.0.1b
     * Issues
         * Compile Issue view more [here](https://github.com/d3vpy/TTUC/issues/1)
+    * ❌ GUI
+    * ❌ Wordlist support
 
 ## Meta
 
